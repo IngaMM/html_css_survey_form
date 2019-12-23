@@ -1,0 +1,169 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Airline Rating Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">Airline Rating</h1>
+
+  <div id="mainPart">
+    <p id="description">
+      Give a rating for your last flight
+    </p>
+
+    <form id="survey-form">
+      <div class="tabline">
+        <label id="airline-name-label" class="labels" for="airline">
+          Airline:
+        </label>
+        <div class="tab">
+          <input
+            type="text"
+            id="airline"
+            class="field"
+            placeholder="Airline"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="tabline">
+        <label id="name-label" class="labels" for="name"> Name: </label>
+        <div class="tab">
+          <input
+            type="text"
+            id="name"
+            class="field"
+            placeholder="Your name"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="tabline">
+        <label id="email-label" class="labels" for="email"> Email: </label>
+        <div class="tab">
+          <input
+            type="email"
+            id="email"
+            class="field"
+            placeholder="Your Email"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="tabline">
+        <label id="number-label" class="labels" for="number">
+          Age (optional):
+        </label>
+        <div class="tab">
+          <input
+            type="number"
+            id="number"
+            class="field"
+            placeholder="Age"
+            min="1"
+            max="125"
+          />
+        </div>
+      </div>
+
+      <div class="tabline">
+        <label id="drowdown-label" class="labels" for="dropdown">
+          What class did you fly in?
+        </label>
+        <div class="tab">
+          <select id="dropdown">
+            <option value="First Class">First Class</option>
+            <option value="Business Class">Business Class</option>
+            <option value="Economy Class">Economy Class</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="tabline">
+        <label class="labels" id="radioButtonLabel" for="ratingRadioButtons">
+          How would you rate your overall experience with this airline?
+        </label>
+        <div class="tab">
+          <ul style="list-style-type:none" id="ratingRadioButtons">
+            <li>
+              <input
+                type="radio"
+                id="Excellent"
+                name="Rating"
+                value="Excellent"
+              />
+              <label class="labelRadio" for="Excellent"> Excellent </label>
+            </li>
+            <li>
+              <input
+                type="radio"
+                id="Satisfactory"
+                name="Rating"
+                value="Satisfactory"
+              />
+              <label class="labelRadio" for="Satisfactory">
+                Satisfactory
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="Bad" name="Rating" value="Bad" />
+              <label class="labelRadio" for="Bad"> Bad </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tabline">
+        <label class="labels" id="checkboxLabel" for="toBeImprovedCheckboxes">
+          What should be improved? <br />
+          Check all that apply.
+        </label>
+        <div class="tab">
+          <ul style="list-style-type:none" id="toBeImprovedCheckboxes">
+            <li>
+              <input type="checkbox" name="toBeImproved" value="Punctuality" />
+              <label class="labelCheckbox" for="Punctuality">
+                Punctuality
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="toBeImproved" value="Cleanliness" />
+              <label class="labelCheckbox" for="Cleanliness">
+                Cleanliness
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="toBeImproved" value="Food" />
+              <label class="labelCheckbox" for="Food"> Food </label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                name="toBeImproved"
+                value="Entertainment"
+              />
+              <label class="labelCheckbox" for="Entertainment">
+                Entertainment
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tabline">
+        <label class="labels" id="textareaLabel" for="text">
+          Any other comments or suggestions?
+        </label>
+        <div class="tab">
+          <textarea id="text" name="text" cols="50" rows="8"></textarea>
+        </div>
+      </div>
+
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+    <div></div>
+  </div>
+</body>
